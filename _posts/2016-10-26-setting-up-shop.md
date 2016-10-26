@@ -1,121 +1,93 @@
 ---
 layout: post
-title: Example Content
+title: Setting up Shop
 ---
 
-<div class="message">
-  Howdy! This is an example blog post that shows several types of HTML content supported in this theme.
-</div>
+I've always wanted to write a blog. After years of reading helpful articles from famous bloggers, I want to try it myself. But sustaining **a healthy blog** with regular and meaningful updates is not easy. So I researched the cleanest solution best fitting for my case and this is the result.
 
-Cum sociis natoque penatibus et magnis <a href="#">dis parturient montes</a>, nascetur ridiculus mus. *Aenean eu leo quam.* Pellentesque ornare sem lacinia quam venenatis vestibulum. Sed posuere consectetur est at lobortis. Cras mattis consectetur purus sit amet fermentum.
+> Caveat: this is first and foremost a personal blog. I don't guarantee the validity of this content, nor will I update it in the future.
 
-> Curabitur blandit tempus porttitor. Nullam quis risus eget urna mollis ornare vel eu leo. Nullam id dolor id nibh ultricies vehicula ut id elit.
+## Requirements
 
-Etiam porta **sem malesuada magna** mollis euismod. Cras mattis consectetur purus sit amet fermentum. Aenean lacinia bibendum nulla sed consectetur.
-
-## Inline HTML elements
-
-HTML defines a long list of available inline tags, a complete list of which can be found on the [Mozilla Developer Network](https://developer.mozilla.org/en-US/docs/Web/HTML/Element).
-
-- **To bold text**, use `<strong>`.
-- *To italicize text*, use `<em>`.
-- Abbreviations, like <abbr title="HyperText Markup Langage">HTML</abbr> should use `<abbr>`, with an optional `title` attribute for the full phrase.
-- Citations, like <cite>&mdash; Mark otto</cite>, should use `<cite>`.
-- <del>Deleted</del> text should use `<del>` and <ins>inserted</ins> text should use `<ins>`.
-- Superscript <sup>text</sup> uses `<sup>` and subscript <sub>text</sub> uses `<sub>`.
-
-Most of these elements are styled by browsers with few modifications on our part.
-
-## Heading
-
-Vivamus sagittis lacus vel augue rutrum faucibus dolor auctor. Duis mollis, est non commodo luctus, nisi erat porttitor ligula, eget lacinia odio sem nec elit. Morbi leo risus, porta ac consectetur ac, vestibulum at eros.
-
-### Code
-
-Cum sociis natoque penatibus et magnis dis `code element` montes, nascetur ridiculus mus.
-
-{% highlight js %}
-// Example can be run directly in your JavaScript console
-
-// Create a function that takes two arguments and returns the sum of those arguments
-var adder = new Function("a", "b", "return a + b");
-
-// Call the function
-adder(2, 6);
-// > 8
-{% endhighlight %}
-
-Aenean lacinia bibendum nulla sed consectetur. Etiam porta sem malesuada magna mollis euismod. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa.
-
-### Lists
-
-Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Aenean lacinia bibendum nulla sed consectetur. Etiam porta sem malesuada magna mollis euismod. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus.
-
-* Praesent commodo cursus magna, vel scelerisque nisl consectetur et.
-* Donec id elit non mi porta gravida at eget metus.
-* Nulla vitae elit libero, a pharetra augue.
-
-Donec ullamcorper nulla non metus auctor fringilla. Nulla vitae elit libero, a pharetra augue.
-
-1. Vestibulum id ligula porta felis euismod semper.
-2. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus.
-3. Maecenas sed diam eget risus varius blandit sit amet non magna.
-
-Cras mattis consectetur purus sit amet fermentum. Sed posuere consectetur est at lobortis.
+I own a 13-Inch MacBook Pro, Late 2013 with a broken screen which i still use as a desktop. I bought a Toshiba Chromebook 2 for use in class on which I run Linux using [crouton](https://github.com/dnschneid/crouton) (very interesting actually, I'll make that my next post). Luckily every program I use for maintaining this blog is multi-platform, thanks to [Chromium](https://www.chromium.org/) and [Electron](http://electron.atom.io/).
 
 <dl>
-  <dt>HyperText Markup Language (HTML)</dt>
-  <dd>The language used to describe and define the content of a Web page</dd>
+  <dt><a href="https://atom.io/">Atom</a></dt>
+  <dd>A text editor for everyone. My settings are available <a href="https://gist.github.com/berombau/dd16787759bc946d003b5683cdd8138b">here</a></dd>
 
-  <dt>Cascading Style Sheets (CSS)</dt>
-  <dd>Used to describe the appearance of Web content</dd>
+	<dt><a href="https://github.com/">GitHub</a></dt>
+	<dd>Store the code for your site in a repository in the cloud with git</dd>
 
-  <dt>JavaScript (JS)</dt>
-  <dd>The programming language used to build advanced Web sites and applications</dd>
+  <dt><a href="https://desktop.github.com/">GitHub Desktop</a></dt>
+  <dd>A GUI for git to make your life easier</dd>
+
+<dt><a href="https://pages.github.com/">GitHub Pages</a></dt>
+<dd>Host a site from a GitHub repository for free</dd>
+
+<dt><a href="https://jekyllrb.com/">Jekyll</a></dt>
+<dd>A static site generator that works with GitHub Pages (uses Ruby)</dd>
+
+<dt><a href="https://docker.com/">Docker</a></dt>
+<dd>Develop your site locally within a container using Docker, so you don't have to mess with Ruby</dd>
 </dl>
 
-Integer posuere erat a ante venenatis dapibus posuere velit aliquet. Morbi leo risus, porta ac consectetur ac, vestibulum at eros. Nullam quis risus eget urna mollis ornare vel eu leo.
+<dt><a href="https://kitematic.com/">Kitematic</a></dt>
+<dd>A GUI for Docker containers.</dd>
 
-### Tables
+<dt><a href="https://blisk.io/">Blisk</a></dt>
+<dd>A browser for developers so you don't have to hit the refresh button</dd>
 
-Aenean lacinia bibendum nulla sed consectetur. Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+## Setup
 
-<table>
-  <thead>
-    <tr>
-      <th>Name</th>
-      <th>Upvotes</th>
-      <th>Downvotes</th>
-    </tr>
-  </thead>
-  <tfoot>
-    <tr>
-      <td>Totals</td>
-      <td>21</td>
-      <td>23</td>
-    </tr>
-  </tfoot>
-  <tbody>
-    <tr>
-      <td>Alice</td>
-      <td>10</td>
-      <td>11</td>
-    </tr>
-    <tr>
-      <td>Bob</td>
-      <td>4</td>
-      <td>3</td>
-    </tr>
-    <tr>
-      <td>Charlie</td>
-      <td>7</td>
-      <td>9</td>
-    </tr>
-  </tbody>
-</table>
+See that you've setup Atom, a Github account, GitHub Desktop, a GitHub Pages repository (mine is `berombau.github.io`), Docker and Blisk. You should see an index file when you go to `http://username.github.io`.
 
-Nullam id dolor id nibh ultricies vehicula ut id elit. Sed posuere consectetur est at lobortis. Nullam quis risus eget urna mollis ornare vel eu leo.
+ Choose a template, this site uses [Lanyon](https://github.com/poole/lanyon). Add the files to your local GitHub folder e.g. `username.github.io` which syncs with git to your `username.github.io` repository which will show your site on `http://username.github.io`. If you commit now you should see the Lanyon default site.
+
+### Docker
+Now we'll run it locally for development. Pull the official Jekyll image. Alternatively you can use Kitematic if you're not familiar with the terminal.
+
+{% highlight bash %}
+docker pull jekyll/jekyll
+{% endhighlight %}
+
+Running it requires only one long command executed from our git folder, so for ease of use we'll create an alias `jekyll` we can reuse.
+{% highlight bash  linenos %}
+echo "alias jekyll="docker run --rm --label=jekyll --volume=$(pwd):/srv/jekyll -it -p 127.0.0.1:4000:4000 jekyll/jekyll"" >> ~/.aliases
+cd ~/git/username.github.io
+jekyll
+{% endhighlight %}
+
+It should create the right environment and setup tools for Jekyll and start its server. Now if we look at `localhost:4000` with Blisk, we'll see the local version of our site. You can enable auto-refresh in Blisk by watching the folder.
+
+### Customizing
+
+We'll need to jump into the `_config.yml` to adjust some settings. To do this, you can add the folder as a Project Folder in Atom, directly from the command line.
+
+{% highlight bash %}
+atom .
+{% endhighlight %}
+
+Alternatively you can access a terminal from within Atom using a terminal package.
+The file should look something like [this](https://github.com/berombau/berombau.github.io/blob/master/_config.yml). Notice that we rely more on the standard settings of Jekyll by removing settings and adding
+{% highlight yml %}
+...
+paginate: 1
+gems: [jekyll-paginate]
+paginate_path: "page:num"
+...
+{% endhighlight %}
+
+Also change the title, tagline... and such to reflect your own blog. As explained in tge `README.md`, a color scheme can be added by adding `class="theme-base-09"` to the `<body>` tag in `_layouts/default.html`.
+
+Commit the changes, sync to GitHub and see the results on `https://username.github.io`.
+
+## Additional Features
+Here's a list of possible additional features to this basic setup
+- Update workflow for new versions of Jekyll and Lanyon
+- Adding a custom domain using CNAME
+- Adding a Disqus to the bottom of every post
+- Using [Travis CI](https://travis-ci.org) for Continuous Integration and testing
+- Creating a mobile workflow for editing on the road
 
 -----
-
-Want to see something else added? <a href="https://github.com/poole/poole/issues/new">Open an issue.</a>
+Want to add something to this post? <a href="https://github.com/berombau/berombau.github.io/issues/new">Open an issue</a>.
