@@ -13,14 +13,14 @@ I've always wanted to write a blog. After years of reading helpful articles from
 I own a 13-Inch MacBook Pro, Late 2013 with a broken screen which i still use as a desktop. I bought a Toshiba Chromebook 2 for use in class on which I run Linux using [crouton](https://github.com/dnschneid/crouton) (very interesting actually, I'll make that my next post). Luckily every program I use for maintaining this blog is multi-platform, thanks to [Chromium](https://www.chromium.org/) and [Electron](http://electron.atom.io/).
 
 <dl>
-  <dt><a href="https://atom.io/">Atom</a></dt>
-  <dd>A text editor for everyone. My settings are available <a href="https://gist.github.com/berombau/dd16787759bc946d003b5683cdd8138b">here</a>.</dd>
+<dt><a href="https://atom.io/">Atom</a></dt>
+<dd>A text editor for everyone. My settings are available <a href="https://gist.github.com/berombau/dd16787759bc946d003b5683cdd8138b">here</a>.</dd>
 
-	<dt><a href="https://github.com/">GitHub</a></dt>
-	<dd>Store the code for your site in a repository in the cloud with git.</dd>
+    <dt><a href="https://github.com/">GitHub</a></dt>
+    <dd>Store the code for your site in a repository in the cloud with git.</dd>
 
-  <dt><a href="https://desktop.github.com/">GitHub Desktop</a></dt>
-  <dd>A GUI for git to make your life easier.</dd>
+<dt><a href="https://desktop.github.com/">GitHub Desktop</a></dt>
+<dd>A GUI for git to make your life easier.</dd>
 
 <dt><a href="https://pages.github.com/">GitHub Pages</a></dt>
 <dd>Host a site from a GitHub repository for free.</dd>
@@ -42,9 +42,10 @@ I own a 13-Inch MacBook Pro, Late 2013 with a broken screen which i still use as
 
 See that you've setup Atom, a Github account, GitHub Desktop, a GitHub Pages repository (mine is `berombau.github.io`), Docker and Blisk. You should see an index file when you go to `http://username.github.io`.
 
- Choose a template. This site uses [Lanyon](https://github.com/poole/lanyon). Add the files to your local GitHub folder e.g. `username.github.io` which syncs with git to your `username.github.io` repository which will show your site on `http://username.github.io`. If you commit now you should see the Lanyon default site.
+Choose a template. This site uses [Lanyon](https://github.com/poole/lanyon). Add the files to your local GitHub folder e.g. `username.github.io` which syncs with git to your `username.github.io` repository which will show your site on `http://username.github.io`. If you commit now you should see the Lanyon default site.
 
 ### Docker
+
 Now we'll run it locally for development. Pull the official Jekyll image. Alternatively you can use Kitematic if you're not familiar with the terminal.
 
 {% highlight bash %}
@@ -53,8 +54,8 @@ docker pull jekyll/jekyll
 
 Running it requires only one long command executed from our git folder, so for ease of use we'll create an alias `jekyll` we can reuse.
 {% highlight bash  linenos %}
-echo "alias jekyll="docker run --rm --label=jekyll --volume=$(pwd):/srv/jekyll -it -p 127.0.0.1:4000:4000 jekyll/jekyll"" >> ~/.aliases
-cd ~/git/username.github.io
+echo "alias jekyll="docker run --rm --label=jekyll --volume=$(pwd):/srv/jekyll -it -p 127.0.0.1:4000:4000 jekyll/jekyll"" >> \~/.aliases
+cd \~/git/username.github.io
 jekyll
 {% endhighlight %}
 
@@ -72,7 +73,7 @@ Alternatively you can access a terminal from within Atom using a terminal packag
 {% highlight yml %}
 ...
 paginate: 1
-gems: [jekyll-paginate]
+gems: \[jekyll-paginate\]
 paginate_path: "page:num"
 ...
 {% endhighlight %}
@@ -82,12 +83,21 @@ Also change the title, tagline... and such to reflect your own blog. As explaine
 Commit the changes, sync to GitHub and see the results on `https://username.github.io`.
 
 ## Additional Features
-Here's a list of possible additional features to this basic setup
-- Update workflow for new versions of Jekyll and Lanyon
-- Adding a [custom domain](https://help.github.com/articles/using-a-custom-domain-with-github-pages/) using CNAME
-- Adding a [Disqus](https://disqus.com/) to the bottom of every post
-- Using [Travis CI](https://travis-ci.org) for Continuous Integration and testing
-- Creating a mobile workflow for editing on the road
 
------
+Here's a list of possible additional features to this basic setup
+
+* Update workflow for new versions of Jekyll and Lanyon
+
+* Adding a [custom domain](https://help.github.com/articles/using-a-custom-domain-with-github-pages/) using CNAME
+
+* Adding a [Disqus](https://disqus.com/) to the bottom of every post
+
+* Using [Travis CI](https://travis-ci.org) for Continuous Integration and testing
+
+* Creating a mobile workflow for editing on the road
+
+* Alternatively you can skip all this and use [Siteleaf](https.siteleaf.com) or at least connect connect with it for updating on a remote computer. Very nice option, but it takes the fun out of it.
+
+---
+
 Want to add something to this post? <a href="https://github.com/berombau/berombau.github.io/issues/new">Open an issue</a>.
