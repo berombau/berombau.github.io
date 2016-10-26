@@ -1,0 +1,26 @@
+---
+title: berombau
+timezone: UTC
+collections:
+  posts:
+    title: Posts
+    output: true
+  uploads:
+    title: Uploads
+    output: true
+permalink: pretty
+tagline: A personal blog
+description: A reserved <a href="https://jekyllrb.com" target="_blank">Jekyll</a>
+  theme that places the utmost gravity on content with a hidden drawer. Made by <a
+  href="https://twitter.com/mdo" target="_blank">@mdo</a>.
+url: https://github.com/berombau
+author:
+  name: Benjamin Rombaut
+  url: https://github.com/berombau
+paginate: 1
+gems:
+- jekyll-paginate
+paginate_path: page:num
+version: 2.0.0
+github:
+  repo: https://github.com/berombau/berombau.github.io
