@@ -1,6 +1,7 @@
 ---
-layout: post
 title: Example Content
+date: 2014-01-01 00:00:00 Z
+layout: post
 ---
 
 <div class="message">

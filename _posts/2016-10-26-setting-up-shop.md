@@ -1,6 +1,7 @@
 ---
-layout: post
 title: Setting up Shop
+date: 2016-10-26 00:00:00 Z
+layout: post
 ---
 
 I've always wanted to write a blog. After years of reading helpful articles from famous bloggers, I want to try it myself. But sustaining **a healthy blog** with regular and meaningful updates is not easy. So I researched the cleanest solution best fitting for my case and this is the result.

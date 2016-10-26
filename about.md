@@ -1,6 +1,6 @@
 ---
-layout: page
 title: About
+layout: page
 ---
 
 I'm an Informatics student at the [University of Ghent](https://ugent.be).
