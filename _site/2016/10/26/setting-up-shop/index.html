@@ -107,35 +107,35 @@
 
 <dl>
   <dt><a href="https://atom.io/">Atom</a></dt>
-  <dd>A text editor for everyone. My settings are available <a href="https://gist.github.com/berombau/dd16787759bc946d003b5683cdd8138b">here</a></dd>
+  <dd>A text editor for everyone. My settings are available <a href="https://gist.github.com/berombau/dd16787759bc946d003b5683cdd8138b">here</a>.</dd>
 
 	<dt><a href="https://github.com/">GitHub</a></dt>
-	<dd>Store the code for your site in a repository in the cloud with git</dd>
+	<dd>Store the code for your site in a repository in the cloud with git.</dd>
 
   <dt><a href="https://desktop.github.com/">GitHub Desktop</a></dt>
-  <dd>A GUI for git to make your life easier</dd>
+  <dd>A GUI for git to make your life easier.</dd>
 
 <dt><a href="https://pages.github.com/">GitHub Pages</a></dt>
-<dd>Host a site from a GitHub repository for free</dd>
+<dd>Host a site from a GitHub repository for free.</dd>
 
 <dt><a href="https://jekyllrb.com/">Jekyll</a></dt>
-<dd>A static site generator that works with GitHub Pages (uses Ruby)</dd>
+<dd>A static site generator that works with GitHub Pages (uses Ruby).</dd>
 
 <dt><a href="https://docker.com/">Docker</a></dt>
-<dd>Develop your site locally within a container using Docker, so you don't have to mess with Ruby</dd>
+<dd>Develop your site locally within a container using Docker, so you don't have to mess with Ruby.</dd>
 </dl>
 
 <dt><a href="https://kitematic.com/">Kitematic</a></dt>
 <dd>A GUI for Docker containers.</dd>
 
 <dt><a href="https://blisk.io/">Blisk</a></dt>
-<dd>A browser for developers so you don't have to hit the refresh button</dd>
+<dd>A browser for developers so you don't have to hit the refresh button.</dd>
 
 <h2 id="setup">Setup</h2>
 
 <p>See that you’ve setup Atom, a Github account, GitHub Desktop, a GitHub Pages repository (mine is <code class="highlighter-rouge">berombau.github.io</code>), Docker and Blisk. You should see an index file when you go to <code class="highlighter-rouge">http://username.github.io</code>.</p>
 
-<p>Choose a template, this site uses <a href="https://github.com/poole/lanyon">Lanyon</a>. Add the files to your local GitHub folder e.g. <code class="highlighter-rouge">username.github.io</code> which syncs with git to your <code class="highlighter-rouge">username.github.io</code> repository which will show your site on <code class="highlighter-rouge">http://username.github.io</code>. If you commit now you should see the Lanyon default site.</p>
+<p>Choose a template. This site uses <a href="https://github.com/poole/lanyon">Lanyon</a>. Add the files to your local GitHub folder e.g. <code class="highlighter-rouge">username.github.io</code> which syncs with git to your <code class="highlighter-rouge">username.github.io</code> repository which will show your site on <code class="highlighter-rouge">http://username.github.io</code>. If you commit now you should see the Lanyon default site.</p>
 
 <h3 id="docker">Docker</h3>
 <p>Now we’ll run it locally for development. Pull the official Jekyll image. Alternatively you can use Kitematic if you’re not familiar with the terminal.</p>
@@ -151,7 +151,7 @@
 jekyll<span class="w">
 </span></pre></td></tr></tbody></table></code></pre></figure>
 
-<p>It should create the right environment and setup tools for Jekyll and start its server. Now if we look at <code class="highlighter-rouge">localhost:4000</code> with Blisk, we’ll see the local version of our site. You can enable auto-refresh in Blisk by watching the folder.</p>
+<p>It should create the right environment, setup tools for Jekyll and start its server. Now if we look at <code class="highlighter-rouge">localhost:4000</code> with Blisk, we’ll see the local version of our site. You can enable auto-refresh in Blisk in the settings by watching the folder.</p>
 
 <h3 id="customizing">Customizing</h3>
 
@@ -159,8 +159,7 @@ jekyll<span class="w">
 
 <figure class="highlight"><pre><code class="language-bash" data-lang="bash">atom .</code></pre></figure>
 
-<p>Alternatively you can access a terminal from within Atom using a terminal package.
-The file should look something like <a href="https://github.com/berombau/berombau.github.io/blob/master/_config.yml">this</a>. Notice that we rely more on the standard settings of Jekyll by removing settings and adding</p>
+<p>Alternatively you can access a terminal from within Atom using a terminal package. The file should look something like <a href="https://github.com/berombau/berombau.github.io/blob/master/_config.yml">this</a>. Notice that we rely more on the standard settings of Jekyll by removing settings and adding</p>
 
 <figure class="highlight"><pre><code class="language-yml" data-lang="yml"><span class="nn">...</span>
 <span class="s">paginate</span><span class="pi">:</span> <span class="s">1</span>
@@ -168,7 +167,7 @@ The file should look something like <a href="https://github.com/berombau/beromba
 <span class="s">paginate_path</span><span class="pi">:</span> <span class="s2">"</span><span class="s">page:num"</span>
 <span class="nn">...</span></code></pre></figure>
 
-<p>Also change the title, tagline… and such to reflect your own blog. As explained in tge <code class="highlighter-rouge">README.md</code>, a color scheme can be added by adding <code class="highlighter-rouge">class="theme-base-09"</code> to the <code class="highlighter-rouge">&lt;body&gt;</code> tag in <code class="highlighter-rouge">_layouts/default.html</code>.</p>
+<p>Also change the title, tagline… and such to reflect your own blog. As explained in the <code class="highlighter-rouge">README.md</code>, a color scheme can be added by adding <code class="highlighter-rouge">class="theme-base-09"</code> to the <code class="highlighter-rouge">&lt;body&gt;</code> tag in <code class="highlighter-rouge">_layouts/default.html</code>.</p>
 
 <p>Commit the changes, sync to GitHub and see the results on <code class="highlighter-rouge">https://username.github.io</code>.</p>
 
@@ -176,8 +175,8 @@ The file should look something like <a href="https://github.com/berombau/beromba
 <p>Here’s a list of possible additional features to this basic setup</p>
 <ul>
   <li>Update workflow for new versions of Jekyll and Lanyon</li>
-  <li>Adding a custom domain using CNAME</li>
-  <li>Adding a Disqus to the bottom of every post</li>
+  <li>Adding a <a href="https://help.github.com/articles/using-a-custom-domain-with-github-pages/">custom domain</a> using CNAME</li>
+  <li>Adding a <a href="https://disqus.com/">Disqus</a> to the bottom of every post</li>
   <li>Using <a href="https://travis-ci.org">Travis CI</a> for Continuous Integration and testing</li>
   <li>Creating a mobile workflow for editing on the road</li>
 </ul>
