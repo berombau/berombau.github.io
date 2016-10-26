@@ -10,7 +10,7 @@ I'm an Informatics student at the [University of Ghent](https://ugent.be).
 Some fun facts about this site:
 
 * Built with [Jekyll](https://jekyllrb.com)
-* Using the [Lanton theme](https://lanyon.getpoole.com)
+* Using the [Lanyon theme](https://lanyon.getpoole.com)
 * Running in development on [Docker](https://www.docker.com/)
 * Hosted for free on [GitHub Pages](https://pages.github.com)
 * Coded with [Atom](https://atom.io), an amazing code editor
