@@ -96,7 +96,7 @@ Here's a list of possible additional features to this basic setup
 
 * Creating a mobile workflow for editing on the road
 
-Alternatively you can skip all this and use [Siteleaf](https.siteleaf.com) or at least connect with it for updating on a remote computer. Very nice option, but it takes the fun out of it.
+Alternatively you can skip all this and use [Siteleaf](https.siteleaf.com) or at least connect with it for updating on a remote computer. Very nice option, but it takes the fun out of it. Also possible is using a cloud IDE, like [Cloud9](https://c9.io). There is a public repository of this site available [here](https://ide.c9.io/berombau/berombau).
 
 ---
 

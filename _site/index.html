@@ -114,14 +114,14 @@
 <p>I own a 13-Inch MacBook Pro, Late 2013 with a broken screen which i still use as a desktop. I bought a Toshiba Chromebook 2 for use in class on which I run Linux using <a href="https://github.com/dnschneid/crouton">crouton</a> (very interesting actually, I’ll make that my next post). Luckily every program I use for maintaining this blog is multi-platform, thanks to <a href="https://www.chromium.org/">Chromium</a> and <a href="http://electron.atom.io/">Electron</a>.</p>
 
 <dl>
-  <dt><a href="https://atom.io/">Atom</a></dt>
-  <dd>A text editor for everyone. My settings are available <a href="https://gist.github.com/berombau/dd16787759bc946d003b5683cdd8138b">here</a>.</dd>
+<dt><a href="https://atom.io/">Atom</a></dt>
+<dd>A text editor for everyone. My settings are available <a href="https://gist.github.com/berombau/dd16787759bc946d003b5683cdd8138b">here</a>.</dd>
 
-	<dt><a href="https://github.com/">GitHub</a></dt>
-	<dd>Store the code for your site in a repository in the cloud with git.</dd>
+    <dt><a href="https://github.com/">GitHub</a></dt>
+    <dd>Store the code for your site in a repository in the cloud with git.</dd>
 
-  <dt><a href="https://desktop.github.com/">GitHub Desktop</a></dt>
-  <dd>A GUI for git to make your life easier.</dd>
+<dt><a href="https://desktop.github.com/">GitHub Desktop</a></dt>
+<dd>A GUI for git to make your life easier.</dd>
 
 <dt><a href="https://pages.github.com/">GitHub Pages</a></dt>
 <dd>Host a site from a GitHub repository for free.</dd>
@@ -146,6 +146,7 @@
 <p>Choose a template. This site uses <a href="https://github.com/poole/lanyon">Lanyon</a>. Add the files to your local GitHub folder e.g. <code class="highlighter-rouge">username.github.io</code> which syncs with git to your <code class="highlighter-rouge">username.github.io</code> repository which will show your site on <code class="highlighter-rouge">http://username.github.io</code>. If you commit now you should see the Lanyon default site.</p>
 
 <h3 id="docker">Docker</h3>
+
 <p>Now we’ll run it locally for development. Pull the official Jekyll image. Alternatively you can use Kitematic if you’re not familiar with the terminal.</p>
 
 <figure class="highlight"><pre><code class="language-bash" data-lang="bash">docker pull jekyll/jekyll</code></pre></figure>
@@ -154,8 +155,8 @@
 
 <figure class="highlight"><pre><code class="language-bash" data-lang="bash"><table style="border-spacing: 0"><tbody><tr><td class="gutter gl" style="text-align: right"><pre class="lineno">1
 2
-3</pre></td><td class="code"><pre><span class="nb">echo</span> <span class="s2">"alias jekyll="</span>docker run --rm --label<span class="o">=</span>jekyll --volume<span class="o">=</span><span class="k">$(</span><span class="nb">pwd</span><span class="k">)</span>:/srv/jekyll -it -p 127.0.0.1:4000:4000 jekyll/jekyll<span class="s2">""</span> &gt;&gt; ~/.aliases
-<span class="nb">cd</span> ~/git/username.github.io
+3</pre></td><td class="code"><pre><span class="nb">echo</span> <span class="s2">"alias jekyll="</span>docker run --rm --label<span class="o">=</span>jekyll --volume<span class="o">=</span><span class="k">$(</span><span class="nb">pwd</span><span class="k">)</span>:/srv/jekyll -it -p 127.0.0.1:4000:4000 jekyll/jekyll<span class="s2">""</span> &gt;&gt; <span class="se">\~</span>/.aliases
+<span class="nb">cd</span> <span class="se">\~</span>/git/username.github.io
 jekyll<span class="w">
 </span></pre></td></tr></tbody></table></code></pre></figure>
 
@@ -171,7 +172,7 @@ jekyll<span class="w">
 
 <figure class="highlight"><pre><code class="language-yml" data-lang="yml"><span class="nn">...</span>
 <span class="s">paginate</span><span class="pi">:</span> <span class="s">1</span>
-<span class="s">gems</span><span class="pi">:</span> <span class="pi">[</span><span class="nv">jekyll-paginate</span><span class="pi">]</span>
+<span class="s">gems</span><span class="pi">:</span> <span class="s">\[jekyll-paginate\]</span>
 <span class="s">paginate_path</span><span class="pi">:</span> <span class="s2">"</span><span class="s">page:num"</span>
 <span class="nn">...</span></code></pre></figure>
 
@@ -180,16 +181,31 @@ jekyll<span class="w">
 <p>Commit the changes, sync to GitHub and see the results on <code class="highlighter-rouge">https://username.github.io</code>.</p>
 
 <h2 id="additional-features">Additional Features</h2>
+
 <p>Here’s a list of possible additional features to this basic setup</p>
+
 <ul>
-  <li>Update workflow for new versions of Jekyll and Lanyon</li>
-  <li>Adding a <a href="https://help.github.com/articles/using-a-custom-domain-with-github-pages/">custom domain</a> using CNAME</li>
-  <li>Adding a <a href="https://disqus.com/">Disqus</a> to the bottom of every post</li>
-  <li>Using <a href="https://travis-ci.org">Travis CI</a> for Continuous Integration and testing</li>
-  <li>Creating a mobile workflow for editing on the road</li>
+  <li>
+    <p>Update workflow for new versions of Jekyll and Lanyon</p>
+  </li>
+  <li>
+    <p>Adding a <a href="https://help.github.com/articles/using-a-custom-domain-with-github-pages/">custom domain</a> using CNAME</p>
+  </li>
+  <li>
+    <p>Adding a <a href="https://disqus.com/">Disqus</a> to the bottom of every post</p>
+  </li>
+  <li>
+    <p>Using <a href="https://travis-ci.org">Travis CI</a> for Continuous Integration and testing</p>
+  </li>
+  <li>
+    <p>Creating a mobile workflow for editing on the road</p>
+  </li>
 </ul>
 
+<p>Alternatively you can skip all this and use <a href="https.siteleaf.com">Siteleaf</a> or at least connect with it for updating on a remote computer. Very nice option, but it takes the fun out of it. Also possible is using a cloud IDE, like <a href="https://c9.io">Cloud9</a>. There is a public repository of this site available <a href="https://ide.c9.io/berombau/berombau">here</a>.</p>
+
 <hr />
+
 <p>Want to add something to this post? <a href="https://github.com/berombau/berombau.github.io/issues/new">Open an issue</a>.</p>
 
   </div>
